@@ -1,0 +1,261 @@
+<?php
+//composer require mailgun/mailgun-php:~1.7.2
+# Include the Autoloader (see "Libraries" for install instructions)
+require 'vendor/autoload.php';
+use Mailgun\Mailgun;
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from pornsawann.com/about.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Mar 2017 19:40:54 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>Kasikornpropaper | Contact</title>
+<link rel="shortcut icon" href="images/img/icon.png" type="image/x-icon" />
+<link rel="icon" href="icon.png" type="image/x-icon" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/form.css" rel="stylesheet" type="text/css" media="all" />
+<link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery1.min.html"></script>
+<!-- start menu -->
+<link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+
+<script type="text/javascript" src="js/megamenu.js"></script>
+<script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
+<!--start slider -->
+    <link rel="stylesheet" href="css/fwslider.css" media="all">
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/css3-mediaqueries.js"></script>
+    <script src="js/fwslider.html"></script>
+<!--end slider -->
+<script src="js/jquery.easydropdown.js"></script>
+<style type="text/css">
+          .logo {
+  animation: blink 4s linear infinite;
+}
+
+@keyframes blink {  
+  50% { opacity: 0; }
+}
+</style>
+</head>
+<body>
+
+    <div class="header-top" style="background-color: grey;">
+            <div class="wrap"> 
+             <div class="cssmenu cssmenu1 contact-top" style="font-size: 13px;">
+                <ul>
+                    <li><a href="contact.html">Tel : +15028040172</a></li> |
+                    <li><a href="contact.html">Whatsapp : +66927985817</a></li> |
+                    <li><a href="contact.html">Email :  kasikornpropaper@yahoo.com</a></li>
+                </ul>
+             </div>
+              
+             <div class="cssmenu" style="font-size: 13px;">
+                <ul>
+                    <li class="active"><a href="index.php">Home</a></li> |
+                    <li><a href="about.html">About</a></li> |
+                    <li><a href="products.html">Products</a></li> |
+                    <li><a href="order.php">Inquiry</a></li> |
+                    <li><a href="contact.php">Contact Us</a></li>         
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+     </div>
+     
+	<div class="header-bottom">
+	    <div class="wrap">
+		    <div class="logo">
+				<a href="index.php"><img src="images/img/c-slide-3.png" alt=""/></a>
+			</div>
+	    	
+			<div class="header-bottom-left">
+			
+				
+				
+
+			
+		</div>
+     <div class="clear"></div>
+     </div>
+	</div><hr>
+	     <div class="container">
+         <div class="row">
+         <div class="col-md-4">
+          <h3 style="text-transform: uppercase;">Contact Us</h3>
+                                       <p>
+                                 
+                                <strong>Address </strong>: Soi 8 Thanapong Khlong A. Mueang Chiang Mai, 50000. Thailand. <br />
+                                 
+                                <strong>Country </strong>: Thailand <br />
+                                <strong>Zip/ Postal </strong>: 50000  <br />
+                                <strong>Phone </strong>: +15028040172 <br />
+                                <strong>Fax </strong>: +66 221 418 601 <br />
+                                <strong>Whatsapp </strong>: +66927985817 <br />
+                                 
+                                
+                                <strong>Email 1 </strong>: kasikornpropaper@yahoo.com<br />
+                                <strong>Website </strong>: www.kasikornpropaper.com <br />
+                                <!--<strong>Skype </strong>: Pornsawan<br />  <hr /> <br /> 
+                                <strong>Europe Office </strong>: Germany<br />
+                                <strong>Address </strong>: Am Hambuch 2, 53340 Meckenheim Germany <br />
+                                <strong>Zip/ Postal </strong>: 53340  <br />
+                                <strong>Phone </strong>: +4922256089362 <br /> -->
+
+                          </p> 
+         </div>
+          <div class="col-md-2">
+             
+         </div> 
+         <div class="col-md-6">
+             <form action="contact.php" method="post">
+  <div class="form-group">
+    <label for="sname">Full Name</label>
+    <input type="text" class="form-control" name="sname">
+  </div>
+  <div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" name="email">
+  </div>
+    <div class="form-group">
+    <label for="email"></label>
+    <input type="hidden" value="kasikornpropaper@gmail.com" class="form-control" name="to" id="to">
+  </div>
+    <div class="form-group">
+    <label for="subject">Subject</label>
+    <input type="text" class="form-control" name="subject">
+  </div>
+
+  <div class="form-group">
+  <label for="msg">Comment:</label>
+  <textarea class="form-control" rows="3" name="msg"></textarea>
+</div>
+  <button type="submit" name="submit" class="btn btn-success">Submit</button>
+</form>
+         </div>
+             
+         </div>
+             
+         </div><br>
+ <div class="footer">
+    <!--    <div class="footer-top">
+            <div class="wrap">
+              <div class="section group example">
+                <div class="col_1_of_2 span_1_of_2">
+                    <ul class="f-list">
+                      <li><img src="images/2.png"><span class="f-text">payment on Delivery</span><div class="clear"></div></li>
+                    </ul>
+                </div>
+                <div class="col_1_of_2 span_1_of_2">
+                    <ul class="f-list">
+                      <li><img src="images/3.png"><span class="f-text">Call us! +15028040172 </span><div class="clear"></div></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+              </div>
+            </div>
+        </div> -->
+        <div class="footer-middle">
+            <div class="wrap">
+             
+           
+           
+           
+           
+           <div class="section group example">
+              <div class="col_1_of_f_1 span_1_of_f_1">
+              <h3 style="color:#FFFFFF; font-size:27px; text-transform:uppercase">WE GIVE YOU JUST WHAT YOU NEED</h3>
+                 <div class="">
+                   <div><img src="printers/printer6.jpg"  alt="roll" width="430" height="250"></div>
+                  
+                <div class="clear"></div>
+              </div>
+             </div>
+             <div class="col_1_of_f_1 span_1_of_f_1">
+               <div class="section group example">
+                 <div class="col_1_of_f_2 span_1_of_f_2">
+
+                        
+                 </div>
+                 <div class="col_1_of_f_2 span_1_of_f_2">
+                   <h3 style="color:#000;">Contact us</h3>
+                        <div class="company_address">
+                                    <p> Soi 8 Thanapong Khlong A. Mueang Chiang Mai, 50000. </p>
+                                    
+                                    <p>ZIP Code: 50000 </p>
+                                    <p>Country: Thailand</p>
+                            <p>Phone:  +15028040172</p>
+                            <p>Whatsapp:  +66927985817</p>
+                            
+                            <p>Email: <span>kasikornpropaper@yahoo.com</span></p>
+                            
+                       </div>
+                       <div class="social-media">
+                             <ul>
+                                <li> <span class="simptip-position-bottom simptip-movable" data-tooltip="Google"><a href="index-3.html#" target="_blank"> </a></span></li>
+                                <li><span class="simptip-position-bottom simptip-movable" data-tooltip="Linked in"><a href="index-3.html#" target="_blank"> </a> </span></li>
+                                <li><span class="simptip-position-bottom simptip-movable" data-tooltip="Facebook"><a href="index-3.html#" target="_blank"> </a></span></li>
+                            </ul>
+                       </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+           </div>
+          <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="wrap">
+                 <div class="copy">
+                    <p>© All Rights Reserved,  Kasikornpropaper Ltd 2017</p>
+                 </div>
+                <div class="f-list2">
+                 <ul>
+                    <li class="active"><a href="about.html">About Us</a></li> |
+                    <li><a href="export.html">Inquiry</a></li> |
+                    <li><a href="infrastructure.html">Products</a></li> |
+                    <li><a href="contact.html">Contact Us</a></li> 
+                 </ul>
+                </div>
+                <div class="clear"></div>
+              </div>
+         </div>
+    </div></body>
+
+<!-- Mirrored from pornsawann.com/contact.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Mar 2017 19:40:54 GMT -->
+</html>
+<?php 
+
+if (isset($_POST['submit'])) {
+$sname=$_POST['sname'];
+$to = $_POST['to'];
+$email = $_POST['email'];
+
+$subject = $_POST['subject'];
+
+$msg = $_POST['msg'];
+
+$mgClient = new Mailgun('key-0368cf560de1eeb104ec9e2a046a6e65');
+//enter domain which you find in Default Password 
+$domain = "https://api.mailgun.net/v3/sandbox4893c8eb88fd4db3afc9cd51270a6b78.mailgun.org";
+
+# Make the call to the client.
+$result = $mgClient->sendMessage($domain, array(
+"from" => "$sname <postmaster@sandbox4893c8eb88fd4db3afc9cd51270a6b78.mailgun.org>",
+ "to" => "Baz <$to>",
+
+ "subject" => "$subject",
+ 'html' => "
+<b>Email:</b> $email <br><br>
+<b>Inqury Message:</b><br> $msg
+ "
+));
+echo "<script>alert('Thanks for contacting us, our customer service will get back to in no time!!');</script>";
+}
+?>

@@ -1,0 +1,48 @@
+<html>
+   <head>
+   
+      <style>
+      .site-logo {
+  animation: blink 4s linear infinite;
+}
+
+@keyframes blink {  
+  50% { opacity: 0; }
+}
+         
+         .animated {
+            background-image: url(images/img/c-slide-1.png);
+            background-repeat: no-repeat;
+            background-position: left top;
+            padding-top:95px;
+            margin-bottom:60px;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+         }
+         
+         @keyframes flash {
+            0%, 50%, 100% {
+               opacity: 1;
+            }
+            25%, 75% {
+               opacity: 0;
+            }
+         }
+         
+         .flash {
+            animation-name: flash;
+         }
+      </style>
+      
+   </head>
+   <body>
+
+      
+<div class="site-logo">
+   <a href="http://localhost/website/"><img class="header-image" src="images/img/c-slide-1.png"></a>
+</div>
+      
+   </body>
+</html>
